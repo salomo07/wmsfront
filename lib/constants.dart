@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:shop_app/size_config.dart';
+import 'package:wmsfront/size_config.dart';
 
 const wPrimaryColor = Color(0xFFFF7643);
 const wPrimaryLightColor = Color(0xFFFFECDF);
