@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:wmsfront/constants.dart';
-import 'package:wmsfront/screens/sign_in/signin_screen.dart';
+import 'package:wmsfront/screens/splashsceen/signin_screen.dart';
 
 void main() {
   runApp(const MyApp());
