@@ -7,7 +7,7 @@ import 'package:flutter/widgets.dart';
 // import 'package:wmsfront/screens/login_success/login_success_screen.dart';
 // import 'package:wmsfront/screens/otp/otp_screen.dart';
 // import 'package:wmsfront/screens/profile/profile_screen.dart';
-import 'package:wmsfront/screens/sign_in/signin_screen.dart';
+import 'package:wmsfront/screens/splashsceen/splashscreen.dart';
 // import 'package:wmsfront/screens/splash/splash_screen.dart';
 //
 // import 'screens/sign_up/sign_up_screen.dart';
@@ -16,7 +16,7 @@ import 'package:wmsfront/screens/sign_in/signin_screen.dart';
 // All our routes will be available here
 final Map<String, WidgetBuilder> routes = {
   // SplashScreen.routeName: (context) => SplashScreen(),
-  SignInScreen.routeName: (context) => SignInScreen(),
+  SplashScreen.routeName: (context) => SplashScreen(),
   // ForgotPasswordScreen.routeName: (context) => ForgotPasswordScreen(),
   // LoginSuccessScreen.routeName: (context) => LoginSuccessScreen(),
   // SignUpScreen.routeName: (context) => SignUpScreen(),

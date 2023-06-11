@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:wmsfront/constants.dart';
+import 'package:wmsfront/screens/splashsceen/splashscreen.dart';
 import 'package:wmsfront/size_config.dart';
 
 class Body extends StatefulWidget{
@@ -72,7 +73,9 @@ class _BodyState extends State<Body>{
                         width: double.infinity,
                         height: getProportionateScreenHeight(56),
                         child: TextButton(
-                            onPressed:(){},
+                            onPressed:(){
+                              Navigator.popAndPushNamed(context, SplashScreen.routeName);
+                            },
                             child:Text("Continue",style:
                             TextStyle(fontSize: getProportionateScreenWidth(18),color: Colors.white)),
                             style: ElevatedButton.styleFrom(

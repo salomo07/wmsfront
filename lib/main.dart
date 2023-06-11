@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:wmsfront/constants.dart';
-import 'package:wmsfront/screens/splashsceen/signin_screen.dart';
+import 'package:wmsfront/routes.dart';
+import 'package:wmsfront/screens/splashsceen/splashscreen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,6 +16,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner:false,
       title: 'Flutter Demox',
+      initialRoute: SplashScreen.routeName,
+      routes: routes,
       theme: ThemeData(
         scaffoldBackgroundColor:Colors.white,
         fontFamily:"Muli",
@@ -26,7 +29,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const SignInScreen(),
+      home: const SplashScreen(),
     );
   }
 }
