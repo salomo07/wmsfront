@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:wmsfront/constants.dart';
+import 'package:wmsfront/screens/login/loginscreen.dart';
 import 'package:wmsfront/screens/splashsceen/splashscreen.dart';
 import 'package:wmsfront/size_config.dart';
 
@@ -74,7 +75,7 @@ class _BodyState extends State<Body>{
                         height: getProportionateScreenHeight(56),
                         child: TextButton(
                             onPressed:(){
-                              Navigator.popAndPushNamed(context, SplashScreen.routeName);
+                              Navigator.pushNamed(context, LoginScreen.routeName);
                             },
                             child:Text("Continue",style:
                             TextStyle(fontSize: getProportionateScreenWidth(18),color: Colors.white)),

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:wmsfront/constants.dart';
 import 'package:wmsfront/routes.dart';
+import 'package:wmsfront/screens/login/loginscreen.dart';
+import 'package:wmsfront/theme.dart';
 import 'package:wmsfront/screens/splashsceen/splashscreen.dart';
 
 void main() {
@@ -15,24 +16,14 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner:false,
-      title: 'Flutter Demox',
-      initialRoute: SplashScreen.routeName,
+      initialRoute: LoginScreen.routeName,
       routes: routes,
-      theme: ThemeData(
-        scaffoldBackgroundColor:Colors.white,
-        fontFamily:"Muli",
-        textTheme:TextTheme(
-          bodyText1:TextStyle(color:wTextColor),
-          bodyText2:TextStyle(color:wTextColor),
-        ),
-        visualDensity:VisualDensity.adaptivePlatformDensity,
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
+      theme: theme(),
       home: const SplashScreen(),
     );
   }
 }
+
 //cd E:\Developer\Application\Sdk\emulator
 //emulator @Pixel_4_API_33
 
